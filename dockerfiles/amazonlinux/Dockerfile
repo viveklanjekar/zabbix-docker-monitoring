@@ -12,7 +12,8 @@ WORKDIR /root
 
 RUN \
    yum -y -q install git subversion automake autoconf gcc make pcre-devel 1>/dev/null && \
-   git clone -q https://github.com/monitoringartist/zabbix-docker-monitoring
+   git clone -q https://github.com/viveklanjekar/zabbix-docker-monitoring
+   
 
 RUN \
    svn --quiet export svn://svn.zabbix.com/${ZABBIX_VERSION} ~/zabbix/ && \
